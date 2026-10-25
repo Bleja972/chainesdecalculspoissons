@@ -365,11 +365,11 @@ function checkAll(show=false){
    const fb=document.getElementById('feedback-'+i);
    fb.innerHTML=(good===5) ? '<span class="ok">Bravo ! 5 / 5</span>' : '<span class="bad">'+good+' / 5 réponses justes</span>';
  });
- document.getElementById('scoreBox').textContent='Score : '+totalGood+' / 40';
+ document.getElementById('scoreBox').textContent='Bilan : '+totalGood+' / 40';
 }
 function showAnswers(){checkAll(true);}
 function newGame(){buildGame();}
 buildGame();
 </script>
 </body>
-</html>
+<script src="https://bleja972.github.io/assets/jeux-conseilles.js?v=1" data-recommendations='{"selector":"#scoreBox","match":"Score : [0-9]+ / 40","games":[{"title":"La course des calculs","url":"https://bleja972.github.io/HJDZGHJ/"},{"title":"Compléments à 10, 100 et 1 000","url":"https://bleja972.github.io/complements/"}],"questions":false}'></script></html>
